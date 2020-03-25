@@ -6,7 +6,7 @@
 #
 # The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
-def threeSumClosest(self, nums: List[int], target: int) -> int:
+def 3sumclosest(self, nums: List[int], target: int) -> int:
         s = sorted(nums)
         diff = float('inf')
         for k in range(len(nums)):

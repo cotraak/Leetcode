@@ -19,7 +19,7 @@
 # Input: [1,3,5,6], 0
 # Output: 0
 
-def searchInsert(self, nums: List[int], target: int) -> int:
+def SearchInsert(nums, target):
         if len(nums) == 0:
             return 0
         if len(nums) == 1:

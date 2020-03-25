@@ -11,7 +11,7 @@
 # 1,1,5 → 1,5,1
 #
 
-def nextPermutation(self, nums: List[int]) -> None:
+def nextPermutation(nums):
         """
         Do not return anything, modify nums in-place instead.
         """

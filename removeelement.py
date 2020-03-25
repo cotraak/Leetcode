@@ -36,28 +36,28 @@
 # for (int i = 0; i < len; i++) {
 #     print(nums[i]);
 # }
-def removeElement(self, nums: List[int], val: int) -> int:
-        if len(nums) == 0:
+def removeelement(nums, val):
+    if len(nums) == 0:
+        return 0
+    if len(nums) == 1:
+        if nums[0] == val:
             return 0
-        if len(nums) == 1:
-            if nums[0] == val:
+        else:
+            return 1
+    for i in range(0, len(nums)):
+        j = len(nums) - 1
+        while nums[j] == val and j >= 0:
+            j -= 1
+        if j < 0:
+            return 0
+        if i >= j:
+            if i == 0 and nums[i] == val:
                 return 0
-            else:
+            elif i == 0 and nums[i] != val:
                 return 1
-        for i in range(0,len(nums)):
-            j = len(nums) - 1
-            while nums[j] == val and j>=0:
-                j-=1
-            if j<0:
-                return 0
-            if i>=j:
-                if i == 0 and nums[i] == val:
-                    return 0
-                elif i==0 and nums[i] !=val:
-                    return 1
-                else:
-                    return j+1
             else:
-                temp = nums[i]
-                nums[i] = nums[j]
-                nums[j] = temp
+                return j + 1
+        else:
+            temp = nums[i]
+            nums[i] = nums[j]
+            nums[j] = temp

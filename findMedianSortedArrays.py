@@ -16,7 +16,7 @@
 # nums2 = [3, 4]
 #
 # The median is (2 + 3)/2 = 2.5
-def findMedianSortedArrays(self, nums1, nums2):
+def findMedianSortedArrays(nums1, nums2):
         nums = nums1 + nums2
         nums = sorted(nums)
         n = len(nums)

@@ -7,7 +7,7 @@
 #
 # Input: [1,8,6,2,5,4,8,3,7]
 # Output: 49
-def maxArea(self, height):
+def maxArea(height):
         l = 0
         r = len(height)-1
         area = 0

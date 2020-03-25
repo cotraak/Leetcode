@@ -15,7 +15,7 @@
 #   [-2,  0, 0, 2]
 # ]
 # O(n^3)
-def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+def 4sum(nums, target):
         s = sorted(nums)
         output = set()
         if len(s)<4:

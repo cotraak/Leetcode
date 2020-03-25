@@ -9,7 +9,7 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
-def twoSum(self, nums, target):
+def twosum(nums, target):
         d1 = dict()
         d2 = dict()
         for i in range(0,len(nums)):

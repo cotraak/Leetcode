@@ -13,7 +13,7 @@
 # Input: nums = [5,7,7,8,8,10], target = 6
 # Output: [-1,-1]
 
-def searchRange(self, nums: List[int], target: int) -> List[int]:
+def SearchRange(nums, target):
         if len(nums) == 0:
             return [-1,-1]
         for i in range(0,len(nums)):
